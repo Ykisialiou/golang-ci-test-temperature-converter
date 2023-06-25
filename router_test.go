@@ -22,10 +22,6 @@ func TestHealthRoute(t *testing.T) {
 
 func TestConvertTemperature(t *testing.T) {
        router := setup()
-       //var jsonData temperature
-       //router.POST("/temperature", convertTemperature)
-       //jsonStr := "{'TemperatureC' : '30'}"
-       //jsonData = {"TemperatureC", "30"}
        data := &temperature{TemperatureC: "30"}
        jsonValue, _ := json.Marshal(data)
 
